@@ -537,6 +537,14 @@ class ControllerCatalogReview extends Controller {
 			$data['type'] = '';
 		}
 
+		if (isset($this->request->post['externallink'])) {
+			$data['externallink'] = $this->request->post['externallink'];
+		} elseif (!empty($review_info)) {
+			$data['externallink'] = $review_info['externallink'];
+		} else {
+			$data['externallink'] = '';
+		}
+
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
