@@ -191,4 +191,102 @@ $('#input-type').on('change', function() {
     }
   });
 //--></script></div>
+
+<style>
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .flex-container > div {
+    margin: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  .brownbox {
+    position: relative;
+    background-color: #a18d71;
+    padding: 10px;
+    min-height: 200px;
+    width: 180px;
+    font-family: 'Open Sans';
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  .brownbox > p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+
+  .brownbox > ul {
+    font-size: 1rem;
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
+  .brownbox > ul > li {
+    margin-bottom: 10px;
+    color: #ece8e1;
+  }
+
+  .bluebox {
+    position: absolute;
+    down: 100px;
+    transform: translate(0, 22px);
+    width: 100%;
+    height: 200px;
+    z-index: 0;
+    background: rgb(12,111,185);
+    background: linear-gradient(90deg, rgba(12,111,185,1) 0%, rgba(9,9,121,1) 100%, rgba(15,57,144,1) 100%);
+  }
+
+  .bluetext {
+    z-index: 1;
+    width: 40%;
+    font-size: 1.7rem;
+  }
+
+  .bluetext > p:first-child {
+    margin-top: 15%;
+    margin-bottom: 0;
+    font-weight: 800;
+  }
+
+  .bluetext > p {
+    margin-left: 8%;
+    text-align: left;
+  }
+
+</style>
+
+<div class="container-fluid">
+  <div class="flex-container">
+    <div class="brownbox">
+      <p>O QUE A ELLIS AGÊNCIA<br>FAZ?</p>
+      <ul>
+        <li>WEBSITES</li>
+        <li>E-COMMERCE</li>
+        <li>SISTEMAS ONLINE</li>
+        <li>APLICATIVOS</li>
+        <li>MARKETING DIGITAL</li>
+      </ul>
+    </div>
+    <div class="bluebox">
+    </div>
+    <div class="bluetext">
+        <p>#EUSOUELLISAGÊNCIA</p>
+        <p>uma agência inovadora que vem a mais de 10 anos<br>trabalhando para prosperar empresas na era digital.</p>
+    </div>
+  </div>
+</div>
+
+
 {{ footer }}
