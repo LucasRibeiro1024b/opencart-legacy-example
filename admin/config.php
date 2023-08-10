@@ -1,18 +1,20 @@
 <?php
+require_once('../env.php');
+
 // HTTP
-define('HTTP_SERVER', 'http://ellistestedev.localhost.test/admin/');
-define('HTTP_CATALOG', 'http://ellistestedev.localhost.test/');
+define('HTTP_SERVER', BASE_URL . '//admin/');
+define('HTTP_CATALOG', BASE_URL . '//');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://ellistestedev.localhost.test/admin/');
-define('HTTPS_CATALOG', 'http://ellistestedev.localhost.test/');
+define('HTTPS_SERVER', BASE_URL . '//admin/');
+define('HTTPS_CATALOG', BASE_URL . '//');
 
 // DIR
-define('DIR_APPLICATION', 'D:/Laragon/www/ellistestedev/admin/');
-define('DIR_SYSTEM', 'D:/Laragon/www/ellistestedev/system/');
-define('DIR_IMAGE', 'D:/Laragon/www/ellistestedev/image/');
-define('DIR_STORAGE', 'D:/Laragon/www/ellistestedev/storage/');
-define('DIR_CATALOG', 'D:/Laragon/www/ellistestedev/catalog/');
+define('DIR_APPLICATION', FULL_LOCATION . '//admin/');
+define('DIR_SYSTEM', FULL_LOCATION . '//system/');
+define('DIR_IMAGE', FULL_LOCATION . '//image/');
+define('DIR_STORAGE', FULL_LOCATION . '//storage/');
+define('DIR_CATALOG', FULL_LOCATION . '//catalog/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
